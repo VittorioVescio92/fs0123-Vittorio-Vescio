@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="nome" required placeholder="Inserisci il tuo nome">
+        <input type="text" name="cognome" placeholder="Inserisci il tuo cognome">
+        <input type="email" name="email" placeholder="inserisci la tua mail">
+        <input type="password" name="password" placeholder="Scegli la tua password">
+        
+        <input type="text" name="classe" value="FS-0123A" readonly disabled>
+        
+        <label for="consenso">Accetto</label>
+        <input type="checkbox" name="consenso" id="consenso">
+
+        <select name="city">
+            <option value="">--scegli--</option>
+            <option value="roma">Roma</option>
+            <option value="milano">Milano</option>
+            <option value="napoli">Napoli</option>
+        </select>
+
+        <textarea name="messaggio" cols="30" rows="10"></textarea>
+        
+        <input type="submit" value="invia i dati">
+
+        <button>invia</button>
+    </form>
+
+<!--attributo "name" (diverso per ogni campo) obbligatorio per invio dati / label legato a id-->
+<!--required rende la compilazione di un campo obbligatorio-->
+
+</body>
+</html>
