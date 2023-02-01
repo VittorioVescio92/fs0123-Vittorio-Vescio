@@ -1,0 +1,47 @@
+/*    font-size: 20px;
+} dimensionamento assoluto */
+
+/* USARE SEMPRE DIMENSIONAMENTO RELATIVO */
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:wght@400;600&display=swap');
+
+@font-face {/* utilizzo font personalizzato */
+    font-family: FontPersonale;
+    src: url(../Nome-del-font.otf) format("opentype"),
+    url(../Nome-del-font2.ttf) format("truetype"),
+    url(../Nome-del-font3.woff) format("woff");
+}
+
+:root{/* solo dimensionamento assoluto - 16px di default */
+    font-size: 20px;
+}
+
+/* dimensionamento relativo riferito al root */
+#t1{
+    font-size: 2rem;
+}
+
+#t2{
+    font-size: 16px;
+}
+
+/* dimensionamento relativo riferito al parent */
+#t3{
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.5; /* Interlinea */
+    letter-spacing: 10px; /* Spaziatura tra caratteri - anche negativa */
+    text-shadow: 10px 10px 10px 10px grey; /* Ombreggiatura */
+}
+
+#parent{
+    font-size: 50px;
+    color: rgb(0,0,128);
+}
+
+/* colori
+RGB=> (0,0,128);
+RGBA=> (0,0,128,0.5)-> 0.5 trasparenza;
+HEX=> #000080 -> 3 coppie, se uguali si possono abbreviare scrivendo 3 cifre;  
