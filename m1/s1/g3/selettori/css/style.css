@@ -1,0 +1,42 @@
+/* CSS è case sensitive */
+/* #=id */
+
+#red{
+    background-color: red;
+}
+
+/* .=class */
+
+.green{
+    background-color: green;
+}
+
+/* valore specificità:
+div => 1;
+.class => 10;
+#id => 100;
+inline style => 1000 - NON USARE!;
+!important => vince su tutto - NON USARE!; 
+a parità di valore prevale quello più in basso. */
+
+div{/* 1 */
+    background-color: grey;
+}
+
+#conflitti{/* 100 */
+    background-color: blue;
+}
+
+.yellow{/* 10 */
+    background-color: yellow;
+}
+
+#conflitti .yellow{/* 100 + 10 = 110 */
+    background-color: fuchsia;
+}
+
+#conflitti #pink{/* 100 + 100 = 200 */
+    background-color: pink;
+}
+
+/* "!important" - dà la priorità e prevale sugli altri - NON USARE! */ 

@@ -1,0 +1,22 @@
+
+/* I commenti si fanno così */
+
+/* selettore{
+    proprietà/regola: valore;
+} */
+
+div{
+    color: red;
+    background-color: blue;
+}
+
+/* SELETTORE DISCENDENTE - tutti gli span che stanno dentro un div: */
+
+div span{
+    color: #fff;
+}
+
+/* SELETTORE DI GRUPPO */
+div, span{
+    border: 1px solid black;
+}
