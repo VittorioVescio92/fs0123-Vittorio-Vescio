@@ -1,0 +1,11 @@
+section>span {/*applica sugli "span" figli diretti di section */
+    text-decoration: line-through;
+}
+
+section+small{
+    font-weight: bold;
+}
+
+section~small{
+    color: red;
+}
