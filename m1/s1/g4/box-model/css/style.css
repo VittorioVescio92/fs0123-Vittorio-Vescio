@@ -1,0 +1,37 @@
+/* 
+inline vuoto=0*0 (invisibile) / block vuoto=100%*0; 
+
+content-area parte più interna box model in cui sicolloca il contenuto;
+
+gli elementi inline ed inline-block non si possono modificare con "width" e "height"; 
+
+N.B. width e "height fisse danno un limite che è sia minimo che massimo.
+
+"overflow" gestisce i contenuti quando eccedono le dimensioni del contenitore (scroll, auto, hidden...).
+
+"white-space": nowrap; non fa andare a capo il testo.
+
+Due classi si inseriscono con: "class= bianco verde", MAI INSERIRE DUE VOLTE CLASS!
+
+NON UTILIZZARE IL PADDING PER DISTANZIARE DUE ELEMENTI! USARE MARGIN!
+
+Il padding aggiunge contenuto verso l'esterno.
+"box-sizing: border-box" ritaglia il padding verso l'interno, senza alterare le dimensioni del contenitore.
+
+padding: asse Y asse X; 
+
+padding top right bottom left; (senso orario partendo dall'alto).
+
+border: spessore stile colore; (border aumenta dimensione contenuto)
+
+border-top-left-radius-> modificherà l'angolo alto a sinistra;
+
+MARGIN SERVE ESCLUSIVAMENTE A STACCARE UN ELEMENTO DAGLI ALTRI!
+
+outline non altera la dimensione del contenuto;
+outline-offset inserisce un bordo distanziato dal contenuto; N.B. si sovrappongono agli altri contenuti!
+
+CSS Reset - stylesheet già pronto da inserire prima di cominciare a lavorare. Azzera lo stile applicato dal browser.
+
+
+*/

@@ -1,0 +1,28 @@
+/*Appunti
+
+INSERIRE SEMPRE! 
+img{
+    max-widht: 100%; 
+} così le immagini non andranno oltre la grandezza del contenitore.
+
+background-image: url(../img/html.png); 
+../ -> sale di un livello.
+
+background-size: asse X asse Y;
+
+background-repeat: no-repeat;
+
+background-position: center;
+
+Si possono inserire 2 o più immagini come background separando gli url con una virgola!
+
+background-image: url(../img/..), url(../img/..);
+
+background-position: right, left; (il primo andrà sulla prima img, il secondo sulla seconda e così via...) 
+
+picsum -> servizio simpatico che fa cambiare l'immagine ad ogni refresh.
+
+background-size: contain; (non taglia l'immagine)
+background size: cover; (taglia ed adatta l'immagine)
+
+*/
