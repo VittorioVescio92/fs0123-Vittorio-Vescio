@@ -1,11 +1,11 @@
 /* 
-inline vuoto=0*0 (invisibile) / block vuoto=100%*0; 
+elemento inline vuoto=0*0 (invisibile e non occupa spazio) / block vuoto=100%*0; 
 
 content-area parte più interna box model in cui sicolloca il contenuto;
 
 gli elementi inline ed inline-block non si possono modificare con "width" e "height"; 
 
-N.B. width e "height fisse danno un limite che è sia minimo che massimo.
+N.B. width e height fisse danno un limite che è sia minimo che massimo.
 
 "overflow" gestisce i contenuti quando eccedono le dimensioni del contenitore (scroll, auto, hidden...).
 
