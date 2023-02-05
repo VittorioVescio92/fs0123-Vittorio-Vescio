@@ -52,7 +52,7 @@ header>img{
     display: block;
     max-width: 200px;
     max-height: 35px;
-    margin: 10% auto;
+    margin: 6% auto;
     font-family: 'Montserrat', sans-serif;
     background-color: #f04c2f;
     text-transform: uppercase;
@@ -66,7 +66,7 @@ header>img{
  }
 
  .block{
-    margin: 5% 10% 5% 0%;
+    margin: 5% 15% 5% 0%;
     text-align: center;
     width: 50vw;
     
@@ -88,7 +88,7 @@ header>img{
 
 #notebook{
     width: 50vw;
-    margin: 5% 0% 5% 10%;
+    margin: 5% 0% 5% 15%;
     text-align: center;    
 }
 
@@ -143,9 +143,6 @@ cite span{
 
 .aside-block img{
     max-width: 100%;
-    
-    
-
 } 
 
 .aside-block h4{
@@ -168,6 +165,7 @@ cite span{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
+
 }
 
 /* FOOTER */
