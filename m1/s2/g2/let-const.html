@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //apro un blocco
+
+        {
+            var a = 0; //non è soggetta a blockscope
+            console.log(a);
+        }
+        console.log(a);
+
+        {
+        let b = 5;
+        console.log(b); 
+    }
+    console.log(b); //Uncaught ReferenceError: b is not defined - poichè let rimane nel blocco.
+
+    var c = 2;
+    {
+        console.log(c);
+        let c = 3; //mi riferisco alla let del blocco
+    }
+    console.log(c); //mi riferisco alla variabile del rigo 27
+
+    //esempio
+
+    let condizione = true;
+    let numero =90;  //se let inserita fuori da un blocco è globale!
+    if(condizione){
+        let numero = 90;
+    }else{
+        let numero = 50;
+    }
+     console.log(numero);
+
+     //CONST
+
+     const D = 22; //costante - viene nominata in maiuscolo per convenzione - soggetta a blockscope
+
+     //naming
+
+     const NOME_DELLA_COSTANTE = 1;
+
+     //valori interni - possono essere riassegnati
+
+     const OGGETTO = {
+        nome: 'Mario';
+        cognome: 'Rossi';
+     }
+     
+     OGGETTO.nome = 'Marco';
+     console.log(OGGETTO.nome);
+
+     // Object.freeze(OGGETTO) => posso "congelare" l'oggetto-
+
+
+    </script>
+</body>
+</html>

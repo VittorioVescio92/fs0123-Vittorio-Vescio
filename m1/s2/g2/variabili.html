@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //hoisting (ricerca var nel DOM) delle variabili non comprende il valore! - funziona appieno solo con le funzioni.
+
+        var a; //var a = undefined
+        console.log(a);
+
+        console.log(a);
+        var a =5; //valore undefined perchè inserita successivamente al console.log, per cui la trova grazie all'hoisting, ma non ne legge il valore.
+        console.log(a);
+
+        a=9; //riassegnamento valore var a - sovrascrive il valore precedente.
+        console.log(a)
+
+
+    </script>
+</body>
+</html>
