@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Array</title>
 </head>
 <body>
     <!-- array è una lista di valori numerati contraddistinta da parentesi quadre [] -->
     <script>
 
-        let arrOld = new Array(); //deprecated
+        let arrOld = new Array(); //deprecated - non si usa
         let numeri = [1,2,3,4,5,6];
         let dati = ['stringa', 0, true, {}, []];
 
@@ -75,9 +75,20 @@
         numerati.sort(function (a,b){
             return a - b;
         })
-        console.log(numerati);
+        console.log(numerati); // funzione di callback!
 
-        
+        //___________________________________________________
+
+        let num = [1, 100, 20, 33];
+        console.log(num);
+        num.sort(); 
+
+        num.sort(function (a,b){
+            return a - b;
+        })
+        console.log(num);
+        num.reverse();
+        console.log(num); 
 
 
     </script>

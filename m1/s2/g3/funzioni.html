@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Funzioni</title>
 </head>
 <body>
     <script>
@@ -21,7 +21,7 @@
         console.log(restituisciSaluto());
 
         let stringa = restituisciSaluto();
-        console.log(stringa.toUpperCase);
+        console.log(stringa.toUpperCase());
 
         /* scope nelle funzioni */
 
@@ -50,13 +50,13 @@
 
             console.log(restituisciSomma(3,9))
 
-            /* closure - annidamento di funzioni */a
+            /* closure - annidamento di funzioni */
 
             function funzione1(){
                 let a = 100;
                 function funzione2(){ //non posso usarla al di fuori di funzione1
-                    console,log(a);
-                    var x = 3;
+                    console.log(a);
+                    var x = 3; //non posso usarla al di fuori di funzione2
                 }
                 funzione2();
 
