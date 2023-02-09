@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- il metodo è una funziona contenuta in un oggetto -->
+
+    <script>
+        /* array.metodo(funzione)  una funzione utilizzata come argomento di un'altra si chiama callback - per cui verrà eseguita in futuro */
+
+    
+        let pizze = ['Margherita', 'Diavola', 'Marinara', 'Mimosa'];
+        console.log(pizze)
+
+        //MAP serve a modificare ogni elemento degli Array - genera un nuovo array
+
+        let numeri = [1,2,3,4,5,6];
+        let numeriX2 = numeri.map(function(n){
+            return n * 2});
+
+        console.log(numeriX2);
+
+        let pizzeDiv = pizze.map(function(valore){
+            return `<div>${valore}</div>`
+        })
+
+        console.log(pizzeDiv)
+
+        // forEach serve solo a ciclare gli Array
+
+        pizzeDiv.forEach(function(valore){
+            document.write(valore)
+        })
+
+        /* Filter - si usa per filtrare i dati e restituisce sempre un Array, anche vuoto! */ 
+        
+        let numeriFiltrati = numeri.filter(function(n){
+            return n > 3
+        })
+        console.log(numeriFiltrati)
+
+        /* Find - si usa per cercare un elemento, indica il primo  valore 'true' che trova e non crea un nuovo Array! */ 
+        
+        let numeroTrovato = numeri.find(function(n){
+            return n > 3
+        })
+        console.log(numeroTrovato)
+
+        /* REDUCE - permette di fare confronti su larga scala*/
+
+        let somma = numeri.reduce(function (previous, current){
+            return previous + current;
+        })
+
+        console.log(somma);
+
+        let numbers = [1,20,300,4,5,6];
+        let numeroGrande = numbers.reduce(function (previous, current){
+            if(previous > current){
+                return previous;
+            }else{
+            return current;}
+        })
+        
+        console.log(numeroGrande);
+
+        /* Eliminare da un Array */
+
+        // andando per esclusione
+        pizze = ['Margherita', 'Diavola', 'Marinara', 'Mimosa'];
+
+        pizze = pizze.filter(function(p){
+            return p != 'Mimosa';
+        })
+        
+        console.log(pizze);
+
+         // eliminazione diretta
+         pizze = ['Margherita', 'Diavola', 'Marinara', 'Mimosa'];
+
+         let indice = pizze.indexOf('Marinara'); //trova la marinara e dimmi in che posizione è.
+
+         console.log(indice)
+
+         pizze.splice(indice, 1) // elimina la pizza marinara
+
+         //ELIMINAZIONE DI ARRAY DI OGGETTI - findIndex
+
+         pizze = [
+            {
+                gusto : 'Margherita',
+                prezzo : 5,
+                disponibile : true,
+            },
+            
+            {
+                gusto : 'Diavola',
+                prezzo : 1,
+                disponibile : true,
+            },
+
+            {
+                gusto : 'Hawaiana',
+                prezzo : 500,
+                disponibile : false,
+            }
+         ];
+
+         let index = pizze.findIndex(function(p){
+            return !p.disponibile
+         })
+
+         console.log(index)
+         pizze.splice(index, 1) //elimino una pizza a partire da quella individuata con findIndex (ovvero quella individuata)
+         console.log(pizze)
+
+    </script>
+
+</body>
+</html>

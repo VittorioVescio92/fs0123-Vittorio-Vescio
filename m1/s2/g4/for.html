@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        for(let i = 0; i < 10; i++){ // con variabile incrementata
+            document.write(' ' + i);
+        }
+
+        document.write('<hr>');
+
+        for(let i = 9; i >= 0; i--){ // con variabile decrementata
+            document.write(`<div>${i}</div>`); // interpolazione con backtic
+        }
+
+        document.write('<hr>');
+
+        let pizze = ['Margherita', 'Diavola', 'Marinara'];
+        for(let i = 0; i < pizze.length; i++){ 
+            document.write(`<div>${pizze[i]}</div>`) /* crea variabile i = 0; controlla che valore i sia inferiore al numero di elementi di [pizze]; se è così stampa il valore di i ed incrementala di 1. */
+        }
+
+        // N.B. il for non si utilizza con gli Array!
+
+        document.write('<hr>');
+
+        //for of - si usa per ciclare Array! - opzionalmente stringhe
+
+        pizze = ['Margherita', 'Diavola', 'Marinara']
+        for(let pizza of pizze){
+            document.write(`<div>${pizza}</div>`);
+        }
+
+        document.write('<hr>');
+
+        for(let lettera of 'Testo'){
+            document.write(lettera + '<br>');
+        }
+
+        document.write('<hr>');
+
+        //for in - si usa per ciclare oggetti!
+
+        let margherita = {
+            gusto : 'Margherita',
+            prezzo : 5,
+        }
+
+        for(let prop in margherita){
+            document.write(`<div>${prop} : ${margherita[prop]}</div>`)
+        }
+
+        //margherita[prop] indica il valore della proprietà
+
+    </script>
+
+</body>
+</html>
