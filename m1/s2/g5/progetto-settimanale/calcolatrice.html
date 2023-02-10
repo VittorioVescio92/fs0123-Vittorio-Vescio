@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolatrice - Made with &hearts; by Vittorio</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="domanda">
+      <h1>La calcolatrice di Vittorio</h1>
+        <p>L'uso della calcolatrice rende pigri e riduce le capacità logiche, pertanto, prima di utilizzarla, esercitati a risolvere mentalmente il seguente calcolo:</p>
+          <span>
+            Quanto fa <strong>124x72 - 72x124</strong> ?
+          </span>
+          <div id="risposta">
+            <input type="button" value="1.098.144" onClick="window.alert('Ritenta, sarai più fortunato!')">
+            <button id="mostraCalcolatrice">0</button>
+            <input type="button" value="3112" onClick="window.alert('Ritenta, sarai più fortunato!')">
+          </div>
+    </div>
+    <div id="container">
+      <div>
+        <input type="text" id="display" placeholder="0" />
+      </div>
+
+      <div class="bottoni">
+        <button data-simbolo="7" onclick="aggiungiSimbolo(this)">7</button>
+        <button data-simbolo="8" onclick="aggiungiSimbolo(this)">8</button>
+        <button data-simbolo="9" onclick="aggiungiSimbolo(this)">9</button>
+        <button data-simbolo="/" onclick="aggiungiSimbolo(this)">/</button>
+      </div>
+
+      <div class="bottoni">                  
+        <button data-simbolo="4" onclick="aggiungiSimbolo(this)">4</button>
+        <button data-simbolo="5" onclick="aggiungiSimbolo(this)">5</button>
+        <button data-simbolo="6" onclick="aggiungiSimbolo(this)">6</button>
+        <button data-simbolo="*" onclick="aggiungiSimbolo(this)">x</button>        
+      </div>
+
+      <div class="bottoni">  
+        <button data-simbolo="1" onclick="aggiungiSimbolo(this)">1</button>
+        <button data-simbolo="2" onclick="aggiungiSimbolo(this)">2</button>
+        <button data-simbolo="3" onclick="aggiungiSimbolo(this)">3</button>
+        <button data-simbolo="-" onclick="aggiungiSimbolo(this)">-</button>  
+      </div>    
+      <div class="bottoni">
+        <button id="canc" onclick="display.value=''">C</button>
+        <button data-simbolo="0" onclick="aggiungiSimbolo(this)">0</button>
+        <button data-simbolo="." onclick="aggiungiSimbolo(this)">.</button>
+        <button data-simbolo="+" onclick="aggiungiSimbolo(this)">+</button>
+      </div>        
+      <div class="bottoni"> 
+        <button id="uguale" onclick="totale()">=</button>
+      </div>     
+    </div>
+    <script src="js/Calcolatrice.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap');
+
+body{
+    background-image: url(../img/sfondo.png);
+}
+
+#domanda{
+    max-width: 95%;
+    text-align: center;
+    margin: 50px auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(150, 150, 150, 0.7);
+    border-radius: 40px;
+    box-shadow: 5px 7px rgba(50, 50, 50, 0.5);    
+}
+
+h1{
+    padding-top: 15px;
+    font-size: 3rem;
+}
+
+p, span{
+    font-size: 1.5rem;
+    font-style: italic;
+    padding: 0 40px 0 40px;
+}
+
+#risposta{
+    display: flex;
+    justify-content:center;
+    margin: 15px;
+    padding-bottom: 15px;    
+}
+
+#risposta button, input{
+    width: 100px;
+    margin: 0 5px;
+    border-radius: 25px;
+    border:1px rgba(150, 150, 150, 0.7);
+    padding: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+
+#container{
+    width: 95%;
+    max-width: 400px;
+    text-align: center;
+    margin: 150px auto;
+    background-color: rgb(214, 214, 214);
+    border-radius: 40px;
+    box-shadow: 5px 7px rgba(50, 50, 50, 0.5);
+    margin-top: 35px;    
+}
+
+#display{
+    margin-top: 30px;
+    width: 65%;
+    padding: 0;
+    height: 25px;
+    background-color: rgba(239, 155, 0, 0.3);
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5rem;
+    text-align:right;
+    border-radius: 0;
+    
+    
+}
+
+.bottoni{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;       
+}
+
+.bottoni button{
+    display: flex;
+    justify-content:center;
+    margin: 0 1%;
+    width: calc(65% / 4 - 0.3rem);
+    height: 40px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 1.7rem;
+    border-radius: 40px;
+    background-color: white;
+    color: rgb(0, 0, 171);
+    border: 0;
+    box-shadow: 2px 3px rgba(128, 128, 128, 0.5);    
+}
+
+#uguale{
+    display: flex;
+    width: 65%;
+    padding: 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+/*
+      senza EXTRA MAX 8/10
+
+    EXTRA - calcolatrice scientifica;
+      - dimostrazione di creatività e/o funzionamenti interessanti;
+      - uguale = senza eval;
+    -->
+
+let simbolo = elemento.textContent; */

@@ -150,6 +150,7 @@ let eyeColor = {
   blueGray : []
 }
 console.log(eyeColor);
+console.log(typeof eyeColor);
 
 /* ESERCIZIO 5
   Inserisci l'oggetto dei personaggi in "starWarsCharacters" nell'array corrispondente al colore dei loro occhi nell'oggetto "eyeColor" precedentemente creato
