@@ -29,7 +29,7 @@ const buttons = document.getElementsByTagName('button')
       mostraCalcolatrice.addEventListener("click", function(){
         document.getElementById('container').hidden = false
         document.getElementById('domanda').hidden = true
-        return window.alert("Bravissimo, ora puoi usare la calcolatrice!")
+        return window.alert("Bravissim*, ora puoi usare la calcolatrice!")
       })
       
       function aggiungiSimbolo(elemento) {

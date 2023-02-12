@@ -8,11 +8,11 @@ body{
 #domanda{
     max-width: 95%;
     text-align: center;
-    margin: 50px auto;
+    margin: 70px auto;
     font-family: 'Roboto', sans-serif;
-    background-color: rgba(150, 150, 150, 0.7);
+    background-color: rgba(129, 211, 249, 0.7);
     border-radius: 40px;
-    box-shadow: 5px 7px rgba(50, 50, 50, 0.5);    
+    box-shadow: 5px 7px rgba(138, 138, 138, 0.5);    
 }
 
 h1{
@@ -21,7 +21,7 @@ h1{
 }
 
 p, span{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-style: italic;
     padding: 0 40px 0 40px;
 }
@@ -29,26 +29,28 @@ p, span{
 #risposta{
     display: flex;
     justify-content:center;
-    margin: 15px;
+    margin: 20px;
     padding-bottom: 15px;    
 }
 
 #risposta button, input{
     width: 100px;
-    margin: 0 5px;
-    border-radius: 25px;
+    margin: 0 10px;
+    border-radius: 20px;
     border:1px rgba(150, 150, 150, 0.7);
-    padding: 2px;
+    padding: 3px;
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
+    box-shadow: 2px 3px rgba(99, 99, 99, 0.5);    
 }
+
 
 
 #container{
     width: 95%;
     max-width: 400px;
     text-align: center;
-    margin: 150px auto;
+    margin: 250px auto;
     background-color: rgb(214, 214, 214);
     border-radius: 40px;
     box-shadow: 5px 7px rgba(50, 50, 50, 0.5);   
@@ -58,12 +60,13 @@ p, span{
     margin-top: 30px;
     width: 65%;
     padding: 0;
-    height: 25px;
-    background-color: rgba(239, 155, 0, 0.3);
+    height: 30px;
+    background-color: rgba(239, 155, 0, 0.4);
     font-family: 'Dosis', sans-serif;
     font-size: 1.5rem;
     text-align:right;
-    border-radius: 0;    
+    border-radius: 5px;
+    box-shadow: none;     
 }
 
 .bottoni{
@@ -112,5 +115,3 @@ p, span{
       - dimostrazione di creatività e/o funzionamenti interessanti;
       - uguale = senza eval;
     -->
-
-let simbolo = elemento.textContent; */
