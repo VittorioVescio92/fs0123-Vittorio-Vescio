@@ -51,8 +51,7 @@ p, span{
     margin: 150px auto;
     background-color: rgb(214, 214, 214);
     border-radius: 40px;
-    box-shadow: 5px 7px rgba(50, 50, 50, 0.5);
-    margin-top: 35px;    
+    box-shadow: 5px 7px rgba(50, 50, 50, 0.5);   
 }
 
 #display{
@@ -64,9 +63,7 @@ p, span{
     font-family: 'Dosis', sans-serif;
     font-size: 1.5rem;
     text-align:right;
-    border-radius: 0;
-    
-    
+    border-radius: 0;    
 }
 
 .bottoni{
@@ -89,6 +86,15 @@ p, span{
     color: rgb(0, 0, 171);
     border: 0;
     box-shadow: 2px 3px rgba(128, 128, 128, 0.5);    
+}
+
+.nascosti{
+    visibility: hidden;
+}
+#power-off{
+    padding-top: 8.5px;
+    display: flex;
+    
 }
 
 #uguale{

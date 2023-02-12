@@ -20,41 +20,49 @@
             <input type="button" value="3112" onClick="window.alert('Ritenta, sarai più fortunato!')">
           </div>
     </div>
-    <div id="container">
+    <div hidden id="container">
       <div>
-        <input type="text" id="display" placeholder="0" />
+        <input type="text" id="display" disabled />
       </div>
 
       <div class="bottoni">
-        <button data-simbolo="7" onclick="aggiungiSimbolo(this)">7</button>
-        <button data-simbolo="8" onclick="aggiungiSimbolo(this)">8</button>
-        <button data-simbolo="9" onclick="aggiungiSimbolo(this)">9</button>
-        <button data-simbolo="/" onclick="aggiungiSimbolo(this)">/</button>
+        <button class="nascosti" onclick="aggiungiSimbolo(this)">&</button>
+        <button class="nascosti" onclick="aggiungiSimbolo(this)">8</button>
+        <button class="nascosti" onclick="aggiungiSimbolo(this)">9</button>
+        <button id="power-off" onclick="power()"><i class="fas fa-xs fa-power-off"></i></button>
+      </div>
+
+      <div class="bottoni">
+        <button disabled data-simbolo="7" onclick="aggiungiSimbolo(this)">7</button>
+        <button disabled data-simbolo="8" onclick="aggiungiSimbolo(this)">8</button>
+        <button disabled data-simbolo="9" onclick="aggiungiSimbolo(this)">9</button>
+        <button disabled data-simbolo="/" onclick="aggiungiSimbolo(this)">/</button>
       </div>
 
       <div class="bottoni">                  
-        <button data-simbolo="4" onclick="aggiungiSimbolo(this)">4</button>
-        <button data-simbolo="5" onclick="aggiungiSimbolo(this)">5</button>
-        <button data-simbolo="6" onclick="aggiungiSimbolo(this)">6</button>
-        <button data-simbolo="*" onclick="aggiungiSimbolo(this)">x</button>        
+        <button disabled data-simbolo="4" onclick="aggiungiSimbolo(this)">4</button>
+        <button disabled data-simbolo="5" onclick="aggiungiSimbolo(this)">5</button>
+        <button disabled data-simbolo="6" onclick="aggiungiSimbolo(this)">6</button>
+        <button disabled data-simbolo="*" onclick="aggiungiSimbolo(this)">x</button>        
       </div>
 
       <div class="bottoni">  
-        <button data-simbolo="1" onclick="aggiungiSimbolo(this)">1</button>
-        <button data-simbolo="2" onclick="aggiungiSimbolo(this)">2</button>
-        <button data-simbolo="3" onclick="aggiungiSimbolo(this)">3</button>
-        <button data-simbolo="-" onclick="aggiungiSimbolo(this)">-</button>  
+        <button disabled data-simbolo="1" onclick="aggiungiSimbolo(this)">1</button>
+        <button disabled data-simbolo="2" onclick="aggiungiSimbolo(this)">2</button>
+        <button disabled data-simbolo="3" onclick="aggiungiSimbolo(this)">3</button>
+        <button disabled data-simbolo="-" onclick="aggiungiSimbolo(this)">-</button>  
       </div>    
       <div class="bottoni">
-        <button id="canc" onclick="display.value=''">C</button>
-        <button data-simbolo="0" onclick="aggiungiSimbolo(this)">0</button>
-        <button data-simbolo="." onclick="aggiungiSimbolo(this)">.</button>
-        <button data-simbolo="+" onclick="aggiungiSimbolo(this)">+</button>
+        <button disabled id="canc" onclick="display.value=''">C</button>
+        <button disabled data-simbolo="0" onclick="aggiungiSimbolo(this)">0</button>
+        <button disabled data-simbolo="." onclick="aggiungiSimbolo(this)">.</button>
+        <button disabled data-simbolo="+" onclick="aggiungiSimbolo(this)">+</button>
       </div>        
       <div class="bottoni"> 
-        <button id="uguale" onclick="totale()">=</button>
+        <button disabled id="uguale" onclick="totale()">=</button>
       </div>     
     </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
     <script src="js/calcolatrice.js"></script>
   </body>
 </html>
