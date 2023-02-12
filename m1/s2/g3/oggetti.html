@@ -18,7 +18,8 @@
             gusto:'Margherita',
             prezzo:5,
             mostraPrezzo: function(){
-                console.log(`La pizza ${this.gusto} costa ${this.prezzo}€`)
+                console.log(`La pizza ${this.gusto} costa ${this.prezzo}€`) /* ${this} si usa per accedere al codice
+                alternativa: console.log('La pizza ' + this.gusto + 'costa ' + this.prezzo + '€') */
             }
         }
         
@@ -30,7 +31,6 @@
         console.log( pizza.gusto )
         console.log( pizza.prezzo )
         
-        //scrittura
         console.log( pizza.gusto )
         
         pizza.gusto = 'Diavola';//riassegno il valore
@@ -39,6 +39,7 @@
         //utilizzo dei metodi
         
         pizza.mostraPrezzo()
+        console.log(pizza.mostraPrezzo);
         //mostraPrezzo()//la funzione non esiste
     }
 

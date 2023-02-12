@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Funzioni</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
+      function saluto() {
+        //fase di definizione della funzione - manca il lancio!
+        console.log("Ciao");
+      }
 
-        function saluto(){ //fase di definizione della funzione - manca il lancio!
-            console.log('Ciao');
-        }
+      saluto(); //fase di lancio/invocazione della funzione - può essere inserito anche fuori dallo script oppure in un file esterno
 
-        saluto(); //fase di lancio/invocazione della funzione - può essere inserito anche fuori dallo script oppure in un file esterno 
+      function restituisciSaluto() {
+        return "benvenuto"; //restituisce la stringa - un solo return per funzione - termina la funzione
+      }
+      console.log(restituisciSaluto());
 
-        function restituisciSaluto(){
-            return 'benvenuto'; //restituisce la stringa - un solo return per funzione - termina la funzione
-        }
-        console.log(restituisciSaluto());
+      let stringa = restituisciSaluto();
+      console.log(stringa.toUpperCase());
 
-        let stringa = restituisciSaluto();
-        console.log(stringa.toUpperCase());
+      /* scope nelle funzioni */
 
-        /* scope nelle funzioni */
+      let a = 0;
 
-        let a = 0;
+      function scope() {
+        console.log("let a =" + a); //a è raggiungibile perchè globale
+        var b = 100; //nasce dentro la funzione, non è raggiungibile dall'esterno
+      }
 
-        function scope(){
-            console.log('let a =' + a); //a è raggiungibile perchè globale
-            var b = 100; //nasce dentro la funzione, non è raggiungibile dall'esterno
-        }
-
-        scope();
-        /* console.log(b); - nasce dentro la funzione, non è raggiungibile dall'esterno
+      scope();
+      /* console.log(b); - nasce dentro la funzione, non è raggiungibile dall'esterno
 
         /* funzioni parametriche */
 
-        function somma(a,b){
-            console.log(a+b);
+      function somma(a, b) {
+        console.log(a + b);
+      }
+
+      somma(2, 6);
+      somma(5, 6);
+
+      function restituisciSomma(a, b) {
+        return a + b;
+      }
+
+      console.log(restituisciSomma(3, 9));
+
+      /* closure - annidamento di funzioni */
+
+      function funzione1() {
+        let a = 100;
+        function funzione2() {
+          //non posso usarla al di fuori di funzione1
+          console.log(a);
+          var x = 3; //non posso usarla al di fuori di funzione2
         }
+        funzione2();
 
-        somma(2,6);
-        somma(5,6);
+        //x non raggiungibile - nessuna variabile esce mai dalla sua funzione
+      }
 
-        function restituisciSomma(a,b){
-            return a + b;
-        }
-
-            console.log(restituisciSomma(3,9))
-
-            /* closure - annidamento di funzioni */
-
-            function funzione1(){
-                let a = 100;
-                function funzione2(){ //non posso usarla al di fuori di funzione1
-                    console.log(a);
-                    var x = 3; //non posso usarla al di fuori di funzione2
-                }
-                funzione2();
-
-                //x non raggiungibile - nessuna variabile esce mai dalla sua funzione
-            }
-            
-            funzione1();
-
+      funzione1();
     </script>
-</body>
+  </body>
 </html>
