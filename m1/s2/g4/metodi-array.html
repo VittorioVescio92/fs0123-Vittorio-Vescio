@@ -118,6 +118,27 @@
          pizze.splice(index, 1) //elimino una pizza a partire da quella individuata con findIndex (ovvero quella individuata)
          console.log(pizze)
 
+        let gen = [
+            {
+                gusto: 'mela',
+            },
+            
+            {
+                gusto : 'pera',
+            },
+
+            {
+                gusto : 'mela',
+            }
+         ];
+
+         let index1 = gen.findIndex(function(p){
+            return p.gusto !== 'mela';
+         })
+
+         console.log(index1)
+         gen.splice(index1, 1) //elimino una pizza a partire da quella individuata con findIndex (ovvero quella individuata)
+         console.log(gen)
     </script>
 
 </body>

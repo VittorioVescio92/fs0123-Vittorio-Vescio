@@ -130,6 +130,18 @@ console.log(switchNumber(arr1));
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
  */
 
+  /* function randomDuplicati() {
+    let arr = [];
+    while (arr.length < 10) {
+      let randomNum = Math.floor(Math.random() * 10);
+      if (!arr.includes(randomNum)) { 
+        arr.push(randomNum); 
+      }
+    }
+    return arr;
+  }
+     console.log(randomDuplicati()); */
+
 /* ESERCIZIO 11 (EXTRA)
   Scrivi un algoritmo in grado di invertire un array.
   es: [1, 3, 5] ==> [5, 3, 1]
