@@ -13,7 +13,7 @@
     </div>
 
     <div>
-      <hr/>
+      <hr />
 
       <ul id="firstList">
         <li>Primo</li>
@@ -118,11 +118,11 @@
 
       const addParagraph = function (content) {
         let secondParagraph = document.getElementById("primodiv");
-        let paragraph = document.createElement("p")
-        secondParagraph.appendChild(paragraph) //vai dentro SecondParagraph e crea un figlio (paragraph)
+        let paragraph = document.createElement("p");
+        secondParagraph.appendChild(paragraph); //vai dentro SecondParagraph e crea un figlio (paragraph)
         paragraph.textContent = content;
-      }
-      addParagraph('Nuovo paragrafo')
+      };
+      addParagraph("Nuovo paragrafo");
 
       /* ESERCIZIO 7
        Scrivi una funzione per far scomparire la prima lista non-ordinata.
@@ -130,11 +130,10 @@
 
       const firstUlDisappear = function () {
         let hiddenList = document.getElementById("firstList");
-        hiddenList.style.display = 'none'; 
-        console.log(hiddenList)       
-      }
-      firstUlDisappear()
-      
+        hiddenList.style.display = "none";
+        console.log(hiddenList);
+      };
+      firstUlDisappear();
 
       /* ESERCIZIO 8
        Scrivi una funzione per rendere verde lo sfondo di ogni lista non-ordinata.
@@ -142,45 +141,45 @@
 
       const paintItGreen = function () {
         let unorderedList = document.querySelectorAll("ul");
-        for(let List of unorderedList){
+        for (let List of unorderedList) {
           List.style.backgroundColor = "green";
         }
-      }
-      paintItGreen()
+      };
+      paintItGreen();
 
       /* ESERCIZIO 9
        Rendi il tag h1 capace di cambiare colore del testo ogni volta che l'utente ci clicca sopra.
       */
 
       const makeItClickable = function () {
-      let camaleonte = document.querySelector("h1");
-      camaleonte.addEventListener("click", () => {
-      let coloreCasuale = Math.floor(Math.random()*16777215).toString(16);
-      camaleonte.style.color = coloreCasuale;
-      })
-      }
-      makeItClickable()
+        let camaleonte = document.querySelector("h1");
+        camaleonte.addEventListener("click", () => {
+          let coloreCasuale = Math.floor(Math.random() * 16777215).toString(16);
+          camaleonte.style.color = coloreCasuale;
+        });
+      };
+      makeItClickable();
 
       /* ESERCIZIO 10
        Cambia il testo del footer con qualcos'altro quando l'utente ci clicca sopra.
       */
 
       const changeFooterText = function (testoModificato) {
-        let cambiaFooter = document.querySelector(".footer h2")
-        cambiaFooter.addEventListener("click", () =>{
+        let cambiaFooter = document.querySelector(".footer h2");
+        cambiaFooter.addEventListener("click", () => {
           cambiaFooter.textContent = testoModificato;
-        })
-        }
-        changeFooterText("testo modificato")        
+        });
+      };
+      changeFooterText("testo modificato");
 
       /* ESERCIZIO 11
        Aggiungi un event listener al campo di testo nella pagina e fai in modo che dopo ogni lettera il suo valore venga mostrato in console.
       */
 
-      const inputField = document.getElementById("input-field")
-      inputField.addEventListener("input", () =>{
-        console.log(inputField.value)
-      })
+      const inputField = document.getElementById("input-field");
+      inputField.addEventListener("input", () => {
+        console.log(inputField.value);
+      });
       // ...
 
       /* ESERCIZIO 12
@@ -188,9 +187,9 @@
       */
 
       window.onload = function () {
-        setTimeout(function(){
-          alert("PERDETE OGNI SPERANZA O VOI CHE ENTRATE!")
-},1000);
+        setTimeout(function () { //accrocchio di bassa lega - errore - onload carica alla fine già di per sè
+          alert("PERDETE OGNI SPERANZA O VOI CHE ENTRATE!");
+        }, 1000);
       };
     </script>
   </body>
