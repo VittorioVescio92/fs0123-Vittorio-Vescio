@@ -171,14 +171,16 @@
           cambiaFooter.textContent = testoModificato;
         })
         }
-        changeFooterText("testo modificato")
-        changeFooterText("testo modificato")
+        changeFooterText("testo modificato")        
 
       /* ESERCIZIO 11
        Aggiungi un event listener al campo di testo nella pagina e fai in modo che dopo ogni lettera il suo valore venga mostrato in console.
       */
 
-      const inputField = document.getElementById("input-field");
+      const inputField = document.getElementById("input-field")
+      inputField.addEventListener("input", () =>{
+        console.log(inputField.value)
+      })
       // ...
 
       /* ESERCIZIO 12
@@ -186,7 +188,9 @@
       */
 
       window.onload = function () {
-        //
+        setTimeout(function(){
+          alert("PERDETE OGNI SPERANZA O VOI CHE ENTRATE!")
+},1000);
       };
     </script>
   </body>
