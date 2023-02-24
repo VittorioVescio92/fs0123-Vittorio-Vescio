@@ -313,15 +313,16 @@ console.log(rollTheDices(7));
 */
 
 function isTodayMyBirthday() {
-let mioCompleanno = "April 15";
-let dataOggi = new Date().getDate() + "-" + (new Date().getMonth() + 1);
-if(mioCompleanno === dataOggi) {
-  return true;
-}else{
-  return false;
-} 
+  let mioCompleanno = "April 15";
+  let dataOggi = new Date().getDate() + "-" + (new Date().getMonth() + 1);
+  if (mioCompleanno === dataOggi) {
+    return true;
+  } else {
+    return false;
+  }
 }
-console.log(isTodayMyBirthday())
+console.log(isTodayMyBirthday());
+console.log();
 
 // Arrays & Oggetti
 
@@ -332,17 +333,17 @@ console.log(isTodayMyBirthday())
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
 
-let tavolo ={
-  colore: 'rosso',
-  materiale: 'legno'
-}
+let tavolo = {
+  colore: "rosso",
+  materiale: "legno",
+};
 function deleteProp(tavolo, word) {
   if (tavolo.materiale === word) {
     delete tavolo.materiale;
   }
   return tavolo;
 }
-console.log(deleteProp(tavolo, 'legno'))
+console.log(deleteProp(tavolo, "legno"));
 
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
@@ -408,11 +409,11 @@ console.log(sumAllTheYears(movies));
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
 
-function searchByTitle(stri){ 
-  let risultati = movies.filter(movie => movie.Title.includes(stri));
+function searchByTitle(stri) {
+  let risultati = movies.filter((movie) => movie.Title.includes(stri));
   return risultati;
-} 
-console.log(searchByTitle ('of'));
+}
+console.log(searchByTitle("of"));
 
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
@@ -513,8 +514,32 @@ aggiuntaCss();
   *
   **
   ***
-
 */
+
+/* function halfTree(n){
+  let s = "";
+  for (i = 0; i < n; i++) {
+    for (j = n - i; j <= n; j++) {
+      s += "*";
+    }
+    s += '\n';
+  }
+  return s;
+}
+console.log(halfTree(3)); */
+
+function halfTree(n) {
+  let s = "";
+  for (i = 0; i < n; i++) {
+    for (j = 0; j <= i; j++) {
+      //il limite è rappresentato dalla condizione
+      s += "*";
+    }
+    s += "\n";
+  }
+  return s;
+}
+console.log(halfTree(3));
 
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
@@ -527,6 +552,28 @@ aggiuntaCss();
   *****
 
 */
+
+function tree(n) {
+  let s = "";
+  for (i = 0; i < n; i++) {
+    for (j = 0; j < n+i; j++) {
+      if(j < n - (i+1)){
+        s += ' ';
+      }else{
+        s += "*";
+      }  
+    }
+    s += "\n";
+  }
+  return s;
+}
+console.log(tree(3));
+
+/* 
+0-2
+1-1 1-2 1-3
+2-0 2-1 2-2 2-3 2-4
+
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
