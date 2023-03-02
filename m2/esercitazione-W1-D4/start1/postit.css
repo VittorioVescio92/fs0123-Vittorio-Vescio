@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+main {
+  background-color: rgb(75, 75, 75);
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-inline: 30px;
+  gap: 45px;
+  padding-block: 100px;
+}
+
+div {
+  width: calc(85% / 4);
+  text-align: center;
+  padding-block: 50px;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  box-shadow: 0 8px 5px rgb(0, 0, 0, 0.3);
+  transition-property: scale(1);
+  transition-duration: 1s;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.6)
+  );
+  opacity: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.yellow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 98);
+  transform: rotate(-9deg);
+}
+
+.green {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #97ff9b;
+  transform: rotate(+9deg);
+}
+
+.last {
+  transform: rotate(+3deg);
+}
+
+.violet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 164, 255);
+  transform: rotate(-11deg);
+}
+
+div:hover {
+  transform: rotate(0deg);
+  transform: scale(1.3);
+}
+
+@keyframes insert {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.post1 {
+  animation: insert 0.5s ease-out 1s forwards;
+}
+
+.post2 {
+  animation: insert 0.5s ease-out 1.5s forwards;
+}
+
+.post3 {
+  animation: insert 0.5s ease-out 2s forwards;
+}
+
+.post4 {
+  animation: insert 0.5s ease-out 2.5s forwards;
+}
+
+.post5 {
+  animation: insert 0.5s ease-out 3s forwards;
+}
+
+.post6 {
+  animation: insert 0.5s ease-out 3.5s forwards;
+}
+
+.post7 {
+  animation: insert 0.5s ease-out 4s forwards;
+}
+
+.post8 {
+  animation: insert 0.5s ease-out 4.5s forwards;
+}

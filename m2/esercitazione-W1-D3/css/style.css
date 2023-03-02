@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+
+body {
+  font-family: "Golos Text", sans-serif;
+}
+
+nav {
+  padding: 15px 25px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #faf8e4;
+}
+
+nav a {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 3%;
+  border-radius: 25px;
+  background-color: #f1e18c;
+  box-sizing: border-box;
+  border: none;
+  color: #723417;
+  text-decoration: none;
+}
+
+#shop {
+  display: flex;
+  font-size: 1.3rem;
+  gap: 2px;
+  align-items: center;
+}
+
+h2 {
+  display: block;
+  margin-block: 15px;
+  font-weight: 800;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #723417;
+}
+
+@media screen and (max-width: 575px) {
+  nav {
+    flex-wrap: wrap;
+    border-radius: 50px;
+    margin: 10px;
+  }
+
+  nav a {
+    width: 48%;
+    text-align: center;
+  }
+
+  #shop {
+    padding-block: 15px;
+    width: 98%;
+    order: -1;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 3.8rem;
+  }
+}
+
+aside {
+  margin: 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card {
+  margin-inline: auto;
+  max-width: 48%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 25px;
+  color: #723417;
+  background-color: #faf8e4;
+}
+
+.card img {
+  border-radius: 25px 25px 0 0;
+}
+
+.card .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5px;
+  line-height: 25px;
+}
+
+.bottom p {
+  display: inline-block;
+  margin-block: 10px;
+  margin-inline: auto;
+  font-size: 1.2rem;
+}
+
+.bottom p span {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card button {
+  background-color: #f1e18c;
+  border-radius: 25px;
+  border: none;
+  width: 50%;
+  margin-inline: auto;
+  margin-block: 10px;
+  padding: 3px;
+  font-weight: bold;
+  color: #723417;
+}
+
+.fifth {
+  display: none;
+}
+
+.sixth {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  #flex-container {
+    width: 75vw;
+  }
+  .fourth {
+    display: none;
+  }
+
+  main {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-content: space-evenly;
+    width: 25%;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #shop {
+    order: -1;
+  }
+
+  nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    flex-grow: 1;
+    margin-block-start: 30px;
+    margin-block-end: 30px;
+    border-radius: 100px;
+  }
+
+  article {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .card {
+    max-width: 98%;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+article {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 95%;
+  align-items: center;
+  background-color: #faf8e4;
+  border-radius: 20px;
+  margin-inline: auto;
+}
+
+h3 {
+  padding-block: 15px;
+  order: 1;
+  color: #723417;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+article p {
+  max-width: 90%;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+article img {
+  max-width: 90%;
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 575px) {
+  h3 {
+    padding-block: 25px;
+  }
+
+  article p {
+    padding-bottom: 25px;
+  }
+
+  article img {
+    padding-bottom: 25px;
+  }
+}
